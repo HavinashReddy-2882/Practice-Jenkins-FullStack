@@ -1,0 +1,34 @@
+# Eclipse-specific files
+
+.recommenders/
+.settings/
+.classpath
+.project
+
+# Maven build artifacts
+target/
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Node.js and Vite build artifacts
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+package-lock.json
+
+# IDE and OS-specific files
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
