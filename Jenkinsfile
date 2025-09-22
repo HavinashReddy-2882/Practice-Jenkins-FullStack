@@ -3,10 +3,19 @@ pipeline {
 
     stages {
 
+        stage('Checkout Code') {
+            steps {
+                // checkout the main repo
+                checkout scm
+            }
+        }
+
         stage('Build Frontend') {
             steps {
                 dir('Frontend-Jenkins') {
-                    bat 'npm install'
+                    bat 'node -v'
+                    bat 'npm -v'
+                    bat 'npm ci'        // better for CI (uses package-lock.json)
                     bat 'npm run build'
                 }
             }
